@@ -4,7 +4,6 @@ __path = process.cwd()
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
 require('events').EventEmitter.defaultMaxListeners = 500;
-app.use('/code', code);
 app.use('/',async (req, res, next) => {
 res.sendFile(__path + '/index.html')
 })
